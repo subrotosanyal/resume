@@ -1,0 +1,104 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Theme: Amazon */
+.theme-amazon {
+  --color-primary: #ff9900;
+  --color-secondary: #146eb4;
+  --color-background: #ffffff;
+  --color-text: #111111;
+}
+
+/* Theme: Netflix */
+.theme-netflix {
+  --color-primary: #e50914;
+  --color-secondary: #221f1f;
+  --color-background: #000000;
+  --color-text: #ffffff;
+}
+
+/* Theme: Microsoft */
+.theme-microsoft {
+  --color-primary: #00a4ef;
+  --color-secondary: #7fba00;
+  --color-background: #f3f3f3;
+  --color-text: #737373;
+}
+
+/* Theme: Google */
+.theme-google {
+  --color-primary: #4285f4;
+  --color-secondary: #34a853;
+  --color-background: #ffffff;
+  --color-text: #5f6368;
+}
+
+/* Theme: Facebook */
+.theme-facebook {
+  --color-primary: #1877f2;
+  --color-secondary: #42b72a;
+  --color-background: #f0f2f5;
+  --color-text: #1c1e21;
+}
+
+/* Theme: Instagram */
+.theme-instagram {
+  --color-primary: #405de6;
+  --color-secondary: #5851db;
+  --color-background: #fafafa;
+  --color-text: #262626;
+}
+
+/* Theme: Twitter */
+.theme-twitter {
+  --color-primary: #1da1f2;
+  --color-secondary: #14171a;
+  --color-background: #ffffff;
+  --color-text: #657786;
+}
+
+/* Theme: Orkut */
+.theme-orkut {
+  --color-primary: #9933cc;
+  --color-secondary: #cc3399;
+  --color-background: #f2f2f2;
+  --color-text: #333333;
+}
+
+/* Apply theme colors */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-background: #1a1a1a;
+  --color-text: #ffffff;
+}
+
+/* Additional custom styles */
+.shadow-custom {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
