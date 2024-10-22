@@ -2,64 +2,56 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Theme: Amazon */
-.theme-amazon {
+.theme-river {
   --color-primary: #ff9900;
   --color-secondary: #146eb4;
   --color-background: #ffffff;
   --color-text: #111111;
 }
 
-/* Theme: Netflix */
-.theme-netflix {
+.theme-sunset {
   --color-primary: #e50914;
   --color-secondary: #221f1f;
   --color-background: #000000;
   --color-text: #ffffff;
 }
 
-/* Theme: Microsoft */
-.theme-microsoft {
+.theme-aurora {
   --color-primary: #00a4ef;
   --color-secondary: #7fba00;
   --color-background: #f3f3f3;
   --color-text: #737373;
 }
 
-/* Theme: Google */
-.theme-google {
+.theme-forest {
   --color-primary: #4285f4;
   --color-secondary: #34a853;
   --color-background: #ffffff;
   --color-text: #5f6368;
 }
 
-/* Theme: Facebook */
-.theme-facebook {
+.theme-ocean {
   --color-primary: #1877f2;
   --color-secondary: #42b72a;
   --color-background: #f0f2f5;
   --color-text: #1c1e21;
 }
 
-/* Theme: Instagram */
-.theme-instagram {
-  --color-primary: #405de6;
-  --color-secondary: #5851db;
+.theme-desert {
+  --color-primary: #cccdd3;
+  --color-secondary: #49494e;
   --color-background: #fafafa;
   --color-text: #262626;
 }
 
-/* Theme: Twitter */
-.theme-twitter {
+.theme-mountain {
   --color-primary: #1da1f2;
   --color-secondary: #14171a;
   --color-background: #ffffff;
   --color-text: #657786;
 }
 
-/* Theme: Orkut */
-.theme-orkut {
+.theme-rainforest {
   --color-primary: #9933cc;
   --color-secondary: #cc3399;
   --color-background: #f2f2f2;

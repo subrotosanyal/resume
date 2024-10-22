@@ -6,14 +6,14 @@ import Header from './components/Header';
 import Section from './components/Section';
 
 const themes = [
-  { name: 'Amazon', class: 'theme-amazon' },
-  { name: 'Netflix', class: 'theme-netflix' },
-  { name: 'Microsoft', class: 'theme-microsoft' },
-  { name: 'Google', class: 'theme-google' },
-  { name: 'Facebook', class: 'theme-facebook' },
-  { name: 'Instagram', class: 'theme-instagram' },
-  { name: 'Twitter', class: 'theme-twitter' },
-  { name: 'Orkut', class: 'theme-orkut' },
+  { name: 'Forest', class: 'theme-forest' },
+  { name: 'Ocean', class: 'theme-ocean' },
+  { name: 'Mountain', class: 'theme-mountain' },
+  { name: 'River', class: 'theme-river' },
+  { name: 'Sunset', class: 'theme-sunset' },
+  { name: 'Desert', class: 'theme-desert' },
+  { name: 'Rainforest', class: 'theme-rainforest' },
+  { name: 'Aurora', class: 'theme-aurora' },
 ];
 
 function App() {
