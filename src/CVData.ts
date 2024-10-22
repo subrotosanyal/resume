@@ -161,7 +161,7 @@ const CVData = {
       url: "https://cert.efset.org/d6vezB"
     }
   ],
-  languages: ["English", "Hindi", "Bangla", "German"],
+  languages: ["English", "Hindi", "Bangla"],
   interests: [
     {
       name: "Tinkering with electronics",

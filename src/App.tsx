@@ -83,15 +83,23 @@ function App() {
             {CVData.interests.map((interest, index) => (
               <div key={index} className="mb-4">
                 <h3 className="text-lg font-semibold">{interest.name}</h3>
-                <p className="text-gray-700 dark:text-gray-300">{interest.details}</p>
+                <div className="flex flex-wrap gap-2">
+                  {interest.details.split(",").map((detail, counter) => (
+                    <span 
+                      key={counter} 
+                      className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">
+                      {detail.trim()}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </Section>
 
           <Section title="Languages" icon={<Globe />}>
             <div className="flex flex-wrap gap-2">
-              {CVData.languages.map((language, index) => (
-                <span key={index} className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">
+              {CVData.languages.map((language, counter) => (
+                <span key={counter} className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm">
                   {language}
                 </span>
               ))}
