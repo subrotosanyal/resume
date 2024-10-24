@@ -1,35 +1,55 @@
-import React from 'react';
-import { Sun, Moon } from 'lucide-react';
+import React, { useState } from 'react';
+import { Sun, Moon, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ThemeSwitcher = ({ themes, currentTheme, setTheme, isDarkMode, setIsDarkMode }) => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
-    <div className="fixed bottom-4 right-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-      <div className="flex items-center justify-between mb-4">
+    <div
+      className={`fixed bottom-4 right-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg transition-all duration-300 ${
+        isCollapsed ? 'w-12' : 'w-64'
+      }`}
+    >
+      <div className="flex items-center justify-between">
+        {/* Theme Mode Toggle */}
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
           className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
         >
           {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
         </button>
-        <span className="ml-2 text-sm font-medium">
-          {isDarkMode ? 'Dark Mode' : 'Light Mode'}
-        </span>
+
+        {/* Collapse Toggle */}
+        <button
+          onClick={toggleCollapse}
+          className="ml-auto p-2 rounded-full bg-gray-200 dark:bg-gray-700"
+        >
+          {isCollapsed ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
+        </button>
       </div>
-      <div className="grid grid-cols-2 gap-2">
-        {themes.map((theme) => (
-          <button
-            key={theme.name}
-            onClick={() => setTheme(theme)}
-            className={`px-3 py-1 rounded ${
-              currentTheme.name === theme.name
-                ? 'bg-blue-500 text-white'
-                : 'bg-gray-200 dark:bg-gray-700'
-            }`}
-          >
-            {theme.name}
-          </button>
-        ))}
-      </div>
+
+      {/* Collapsible Content (Hidden when collapsed) */}
+      {!isCollapsed && (
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          {themes.map((theme) => (
+            <button
+              key={theme.name}
+              onClick={() => setTheme(theme)}
+              className={`px-3 py-1 rounded ${
+                currentTheme.name === theme.name
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 dark:bg-gray-700'
+              }`}
+            >
+              {theme.name}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

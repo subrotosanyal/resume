@@ -2,60 +2,68 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* River theme (Cool and refreshing) */
 .theme-river {
-  --color-primary: #ff9900;
-  --color-secondary: #146eb4;
+  --color-primary: #0084ff; /* River blue */
+  --color-secondary: #146eb4; /* Deep blue */
   --color-background: #ffffff;
-  --color-text: #111111;
+  --color-text: #111111; /* Dark contrasting text */
 }
 
+/* Sunset theme (Warm and striking) */
 .theme-sunset {
-  --color-primary: #e50914;
-  --color-secondary: #221f1f;
-  --color-background: #000000;
-  --color-text: #ffffff;
+  --color-primary: #e50914; /* Bold red of the sunset */
+  --color-secondary: #695454; /* Darker tones for the fading light */
+  --color-background: #2d2323; /* Warm dark background */
+  --color-text: #ffffff; /* Bright white text to contrast */
 }
 
+/* Aurora theme (Bright and vibrant) */
 .theme-aurora {
-  --color-primary: #00a4ef;
-  --color-secondary: #7fba00;
-  --color-background: #f3f3f3;
-  --color-text: #737373;
+  --color-primary: #00a4ef; /* Vivid sky blue */
+  --color-secondary: #7fba00; /* Aurora green */
+  --color-background: #f3f3f3; /* Light, clean background */
+  --color-text: #737373; /* Softer, neutral text color */
 }
 
+/* Forest theme (Natural and grounded) */
 .theme-forest {
-  --color-primary: #4285f4;
-  --color-secondary: #34a853;
-  --color-background: #ffffff;
-  --color-text: #5f6368;
+  --color-primary: #4285f4; /* Sky blue seen through trees */
+  --color-secondary: #124a21; /* Forest green */
+  --color-background: #ffffff; /* Bright background to contrast */
+  --color-text: #5f6368; /* Muted earthy text color */
 }
 
+/* Ocean theme (Deep and tranquil) */
 .theme-ocean {
-  --color-primary: #1877f2;
-  --color-secondary: #42b72a;
-  --color-background: #f0f2f5;
-  --color-text: #1c1e21;
+  --color-primary: #1877f2; /* Ocean blue */
+  --color-secondary: #2a60b7; /* Deeper ocean shade */
+  --color-background: #f0f2f5; /* Light, soft background like the sky */
+  --color-text: #1c1e21; /* Dark text for contrast */
 }
 
+/* Desert theme (Soft and muted) */
 .theme-desert {
-  --color-primary: #cccdd3;
-  --color-secondary: #49494e;
-  --color-background: #fafafa;
-  --color-text: #262626;
+  --color-primary: #cccdd3; /* Soft, sandy tones */
+  --color-secondary: #49494e; /* Rocky, earthy shades */
+  --color-background: #fafafa; /* Pale desert sands */
+  --color-text: #262626; /* Dark contrasting text */
 }
 
+/* Mountain theme (Bold and sharp) */
 .theme-mountain {
-  --color-primary: #1da1f2;
-  --color-secondary: #14171a;
-  --color-background: #ffffff;
-  --color-text: #657786;
+  --color-primary: #1da1f2; /* Sky blue on a mountain top */
+  --color-secondary: #14171a; /* Rocky, dark tones */
+  --color-background: #ffffff; /* Crisp and clear mountain air */
+  --color-text: #657786; /* Neutral, calm text */
 }
 
+/* Rainforest theme (Lush and vibrant) */
 .theme-rainforest {
-  --color-primary: #9933cc;
-  --color-secondary: #cc3399;
-  --color-background: #f2f2f2;
-  --color-text: #333333;
+  --color-primary: #9933cc; /* Lush, vibrant purple */
+  --color-secondary: #cc3399; /* Wild pink flower accents */
+  --color-background: #f2f2f2; /* Light, soft background */
+  --color-text: #333333; /* Strong contrasting text */
 }
 
 /* Apply theme colors */
@@ -84,13 +92,4 @@ body {
 .dark {
   --color-background: #1a1a1a;
   --color-text: #ffffff;
-}
-
-/* Additional custom styles */
-.shadow-custom {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.transition-theme {
-  transition: background-color 0.3s ease, color 0.3s ease;
 }

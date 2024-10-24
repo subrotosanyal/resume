@@ -75,7 +75,7 @@ const CVData = {
     {
       position: "Senior Software Engineer",
       company: "Huawei Technologies India Pvt. Ltd.",
-      date: "2008 Jul - Apr 2012",
+      date: "Jul 2008 - Apr 2012",
       responsibilities: [
         "Developed a distributed search index server using SOLR, Katta, HDFS, and Zookeeper",
         "Engineered high-availability solutions for critical systems",
@@ -169,7 +169,7 @@ const CVData = {
     },
     {
       name: "Creating home lab servers",
-      details: "Server setup, virtualization, cloud computing, network configuration, Linux administration, Docker"
+      details: "Server setup, virtualization, cloud computing, network configuration, Linux administration, Docker, automation, low-code, no-code"
     },
     {
       name: "Cooking",
