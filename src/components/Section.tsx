@@ -1,6 +1,12 @@
-import React from 'react';
+import { ReactNode } from 'react';
 
-const Section = ({ title, icon, children }) => {
+interface SectionProps {
+  title: string;
+  icon?: ReactNode;
+  children: ReactNode;
+}
+
+const Section = ({ title, icon, children }: SectionProps) => {
   return (
     <section className="mb-8">
       <h2 className="text-2xl font-bold mb-4 flex items-center">
