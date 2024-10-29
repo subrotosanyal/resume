@@ -72,7 +72,7 @@ const CVData = {
       companyIcon: "/icons/organisation/datameer.jpeg"
     },
     {
-      position: "Contributor in Apache Hadoop Mapreduce Project",
+      position: "Contributor: Hadoop",
       company: "The Apache Software Foundation",
       date: "Aug 2011 - 2016",
       responsibilities: [],
