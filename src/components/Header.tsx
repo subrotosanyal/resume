@@ -1,15 +1,5 @@
 import { Mail, Phone, MapPin, Globe, Github, Linkedin } from 'lucide-react';
-
-interface CVHeader {
-  name: string;
-  title: string;
-  email: string;
-  phone: string;
-  location: string;
-  website: string;
-  github: string;
-  linkedin: string;
-}
+import { CVHeader } from '../types/CVHeader'; // Import CVHeader type
 
 const Header = ({ cv }: { cv: CVHeader }) => {
   return (

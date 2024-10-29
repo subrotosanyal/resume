@@ -1,0 +1,33 @@
+/* src/components/TimelineElement.css */
+.custom-timeline-element {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-content {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.vertical-timeline-element-content-arrow {
+    border-right-color: var(--color-primary);
+}
+
+.vertical-timeline-element-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -15px;
+}
+
+.vertical-timeline-element-date {
+    font-size: 0.85em;
+    color: var(--color-secondary);
+}
+
+.vertical-timeline::before {
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+    border-radius: 10px;
+}
