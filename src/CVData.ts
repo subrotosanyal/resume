@@ -11,7 +11,7 @@ const CVData = {
   experience: [
     {
       position: "VP Engineering",
-      company: "Eye Care Leaders",
+      company: "Sightview Software",
       date: "2023 Sep - Present",
       responsibilities: [
         "Lead strategic technological initiatives",
@@ -19,7 +19,8 @@ const CVData = {
         "Ensure technical excellence in product development",
         "Implement policies and standards",
         "Drive innovation and align technology with business goals to optimize operations"
-      ]
+      ],
+      companyIcon: "/icons/organisation/sightview.png"
     },
     {
       position: "Senior Architect",
@@ -31,7 +32,8 @@ const CVData = {
         "Manage security infrastructure",
         "Optimize systems for efficiency and reliability",
         "Drive technical innovation through robust software architecture design and implementation"
-      ]
+      ],
+      companyIcon: "/icons/organisation/automationhero.jpeg"
     },
     {
       position: "Head of Engineering",
@@ -43,7 +45,8 @@ const CVData = {
         "Ensured product quality, stability, and reliability",
         "Developed policies, standards, and procedures",
         "Fostered innovation in product development while driving organizational growth and technical excellence"
-      ]
+      ],
+      companyIcon: "/icons/organisation/automationhero.jpeg"
     },
     {
       position: "Big Data Architect",
@@ -53,7 +56,8 @@ const CVData = {
         "Designed and managed scalable, fault-tolerant distributed systems for big data needs",
         "Focused on data storage, security, and maintenance",
         "Ensured high availability and performance for enterprise-level software systems through advanced architecture techniques"
-      ]
+      ],
+      companyIcon: "/icons/organisation/marketlogic.svg"
     },
     {
       position: "Software Engineer (Hadoop Expert)",
@@ -64,13 +68,15 @@ const CVData = {
         "Developed scalable solutions for data processing",
         "Optimized distributed systems performance",
         "Drove innovation in big data technology implementation for business insights"
-      ]
+      ],
+      companyIcon: "/icons/organisation/datameer.jpeg"
     },
     {
       position: "Contributor in Apache Hadoop Mapreduce Project",
       company: "The Apache Software Foundation",
       date: "Aug 2011 - 2016",
-      responsibilities: []
+      responsibilities: [],
+      companyIcon: "/icons/organisation/apache.ico"
     },
     {
       position: "Senior Software Engineer",
@@ -81,7 +87,8 @@ const CVData = {
         "Engineered high-availability solutions for critical systems",
         "Enhanced performance and reliability",
         "Ensured fault tolerance across distributed platforms"
-      ]
+      ],
+      companyIcon: "/icons/organisation/huawei.svg"
     }
   ],
   education: [
@@ -89,23 +96,27 @@ const CVData = {
       degree: "Master of Business Administration",
       institution: "Ludwigshafen University of Business and Society",
       date: "March 2024 - Present",
-      details: "International Business Management"
+      details: "International Business Management",
+      companyIcon: "/icons/organisation/hwglu.jpg"
     },
     {
       degree: "Executive Management Programme",
       institution: "Indian Institute of Technology, Delhi",
       date: "Sep 2021 - May 2022",
-      details: "Entrepreneurship Development"
+      details: "Entrepreneurship Development",
+      companyIcon: "/icons/organisation/iitd.svg"
     },
     {
       degree: "Master in Computer Applications",
       institution: "West Bengal University of Technology, Kolkata",
-      date: "2005 - 2008"
+      date: "2005 - 2008",
+      companyIcon: "/icons/organisation/wbut.png"
     },
     {
       degree: "Bachelor of Science",
       institution: "Calcutta University, Kolkata",
-      date: "2002 - 2005"
+      date: "2002 - 2005",
+      companyIcon: "/icons/organisation/cu.svg"
     }
   ],
   skills: [

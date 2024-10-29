@@ -94,6 +94,7 @@ function App() {
                     details={exp.responsibilities}
                     icon="fa-briefcase"
                     isOpen={areAllCardsOpen}
+                    companyIcon={exp.companyIcon}
                   />
                 );
               })}
@@ -119,6 +120,7 @@ function App() {
                     endDate={endDate}
                     company={edu.institution}
                     role={edu.degree}
+                    companyIcon={edu.companyIcon}
                     details={edu.details ? [edu.details] : []}
                     icon="fa-graduation-cap"
                     isOpen={areAllCardsOpen}

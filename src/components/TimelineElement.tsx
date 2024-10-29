@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import './TimelineElement.css'; // Import custom CSS
-import { TimelineElementProps } from '../types/TimelineElementProps'; // Import TimelineElementProps type
+import './TimelineElement.css';
+import { TimelineElementProps } from '../types/TimelineElementProps';
 
-const TimelineElement: React.FC<TimelineElementProps> = ({ startDate, endDate, company, role, details, icon, isOpen }) => {
+const TimelineElement: React.FC<TimelineElementProps> = ({ startDate, endDate, company, role, details, icon, isOpen, companyIcon }) => {
   const [isCardOpen, setIsCardOpen] = useState(isOpen);
 
   useEffect(() => {
@@ -23,18 +23,20 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ startDate, endDate, c
         background: 'var(--color-primary)',
         color: '#fff',
         border: '2px solid var(--color-secondary)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
-      contentStyle={{ background: 'var(--color-background)', color: 'var(--color-text)', width: '100%' }}
+      contentStyle={{ background: 'var(--color-background)', color: 'var(--color-text)' }}
       contentArrowStyle={{ borderRight: '7px solid var(--color-primary)' }}
+      date={`${startDate} ${endDate ? `- ${endDate}` : ''}`}
     >
       <div className="cursor-pointer flex justify-between items-center" onClick={toggleCard}>
         <div>
           <h3 className="text-lg font-bold">{role}</h3>
           <h4 className="text-md font-medium text-secondary">{company}</h4>
         </div>
-        <div className="text-sm font-medium text-gray-600 dark:text-gray-400">
-          {startDate} {endDate ? `- ${endDate}` : ''}
-        </div>
+        {companyIcon && <img src={companyIcon} alt={`${company} logo`} className="company-icon" />}
       </div>
 
       {isCardOpen && (

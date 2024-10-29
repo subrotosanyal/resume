@@ -6,4 +6,5 @@ export interface TimelineElementProps {
   details: string[];
   icon: string;
   isOpen: boolean;
+  companyIcon?: string; // Add this line
 }

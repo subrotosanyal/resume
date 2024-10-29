@@ -1,33 +1,33 @@
 /* src/components/TimelineElement.css */
+
 .custom-timeline-element {
-    margin: 0 0 20px 0;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Increase the maximum width for the card */
+  margin: 0 auto; /* Center the card */
+  padding: 1rem; /* Add some padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 4px; /* Round the corners */
+  transition: transform 0.3s ease; /* Add a transition for hover effect */
 }
 
-.vertical-timeline-element-content {
-    border-radius: 10px;
-    padding: 10px;
+.custom-timeline-element:hover {
+  transform: scale(1.02); /* Slightly enlarge the card on hover */
 }
 
-.vertical-timeline-element-content-arrow {
-    border-right-color: var(--color-primary);
+.company-icon {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensure the icon fits within the specified dimensions */
 }
 
-.vertical-timeline-element-icon {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-left: -15px;
+@media (max-width: 768px) {
+  .custom-timeline-element {
+    max-width: 90%; /* Adjust the width for smaller screens */
+  }
 }
 
-.vertical-timeline-element-date {
-    font-size: 0.85em;
-    color: var(--color-secondary);
-}
-
-.vertical-timeline::before {
-    background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
-    border-radius: 10px;
+@media (max-width: 480px) {
+  .custom-timeline-element {
+    max-width: 100%; /* Adjust the width for very small screens */
+    padding: 0.5rem; /* Reduce padding for small screens */
+  }
 }
