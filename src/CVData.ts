@@ -4,7 +4,7 @@ const CVData = {
   email: "sanyalsubroto@gmail.com",
   phone: "+4915208488373",
   location: "Juliusstraße 52, Wittenberge, DE",
-  website: "https://sanyal.net",
+  website: "https://subroto.sanyal.net",
   linkedin: "https://www.linkedin.com/in/subrotosanyal",
   github: "https://github.com/subrotosanyal",
   about: "An engineering leader with 16+ years of experience across leadership, team building, automation, and open-source technologies. Proven track record in driving enterprise security, developing scalable technical roadmaps, and leading the development of robust, data-centric software solutions. Skilled in building and scaling high-performing teams, implementing cutting-edge technologies, and managing distributed systems. Certified in leadership and advanced technical areas, with a passion for using data to drive innovation and excellence in software engineering. Thrives on blending technology and business to create impactful, future-ready solutions.",
