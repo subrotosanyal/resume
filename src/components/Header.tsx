@@ -13,9 +13,11 @@ const Header = ({ cv }: { cv: CVHeader }) => {
           <a href={`mailto:${cv.email}`} className="flex items-center mb-2">
             <Mail size={18} className="mr-2" /> {cv.email}
           </a>
-          <a href={`tel:${cv.phone}`} className="flex items-center mb-2">
-            <Phone size={18} className="mr-2" /> {cv.phone}
-          </a>
+          {cv.phone && (
+            <a href={`tel:${cv.phone}`} className="flex items-center mb-2">
+              <Phone size={18} className="mr-2" /> {cv.phone}
+            </a>
+          )}
           <span className="flex items-center mb-2">
             <MapPin size={18} className="mr-2" /> {cv.location}
           </span>
