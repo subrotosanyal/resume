@@ -2,7 +2,6 @@ const CVData = {
   name: "Subroto Sanyal",
   title: "Engineering Leader",
   email: "sanyalsubroto@gmail.com",
-  phone: "+4915208488373",
   location: "Juliusstraße 52, Wittenberge, DE",
   website: "https://subroto.sanyal.net",
   linkedin: "https://www.linkedin.com/in/subrotosanyal",
