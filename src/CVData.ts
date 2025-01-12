@@ -12,7 +12,7 @@ const CVData = {
     {
       position: "VP Engineering",
       company: "Sightview Software",
-      date: "2023 Sep - Present",
+      date: "2023 Sep – Present",
       responsibilities: [
         "Lead strategic technological initiatives",
         "Oversee software development teams",
@@ -25,7 +25,7 @@ const CVData = {
     {
       position: "Senior Architect",
       company: "Automation Hero GmbH",
-      date: "Jul 2022 - Aug 2023",
+      date: "Jul 2022 – Aug 2023",
       responsibilities: [
         "Develop enterprise security, support SSO and Identity Broker",
         "Ensure automatic audit logging",
@@ -38,7 +38,7 @@ const CVData = {
     {
       position: "Head of Engineering",
       company: "Automation Hero GmbH",
-      date: "May 2017 - Jul 2022",
+      date: "May 2017 – Jul 2022",
       responsibilities: [
         "Managed and scaled engineering teams",
         "Implemented technical roadmaps",
@@ -51,7 +51,7 @@ const CVData = {
     {
       position: "Big Data Architect",
       company: "Market Logic Software AG",
-      date: "Feb 2017 - May 2017",
+      date: "Feb 2017 – May 2017",
       responsibilities: [
         "Designed and managed scalable, fault-tolerant distributed systems for big data needs",
         "Focused on data storage, security, and maintenance",
@@ -62,7 +62,7 @@ const CVData = {
     {
       position: "Software Engineer (Hadoop Expert)",
       company: "Datameer GmbH",
-      date: "May 2012 - Jan 2017",
+      date: "May 2012 – Jan 2017",
       responsibilities: [
         "Led Hadoop initiatives, implementing execution engines with MapReduce, Spark, and Tez",
         "Developed scalable solutions for data processing",
@@ -74,14 +74,14 @@ const CVData = {
     {
       position: "Contributor: Hadoop",
       company: "The Apache Software Foundation",
-      date: "Aug 2011 - 2016",
+      date: "Aug 2011 – 2016",
       responsibilities: [],
       companyIcon: "/icons/organisation/apache.ico"
     },
     {
       position: "Senior Software Engineer",
       company: "Huawei Technologies India Pvt. Ltd.",
-      date: "Jul 2008 - Apr 2012",
+      date: "Jul 2008 – Apr 2012",
       responsibilities: [
         "Developed a distributed search index server using SOLR, Katta, HDFS, and Zookeeper",
         "Engineered high-availability solutions for critical systems",
@@ -95,27 +95,27 @@ const CVData = {
     {
       degree: "Master of Business Administration",
       institution: "Ludwigshafen University of Business and Society",
-      date: "March 2024 - Present",
+      date: "March 2024 – Present",
       details: "International Business Management",
       companyIcon: "/icons/organisation/hwglu.jpg"
     },
     {
       degree: "Executive Management Programme",
       institution: "Indian Institute of Technology, Delhi",
-      date: "Sep 2021 - May 2022",
+      date: "Sep 2021 – May 2022",
       details: "Entrepreneurship Development",
       companyIcon: "/icons/organisation/iitd.svg"
     },
     {
       degree: "Master in Computer Applications",
       institution: "West Bengal University of Technology, Kolkata",
-      date: "2005 - 2008",
+      date: "2005 – 2008",
       companyIcon: "/icons/organisation/wbut.png"
     },
     {
       degree: "Bachelor of Science",
       institution: "Calcutta University, Kolkata",
-      date: "2002 - 2005",
+      date: "2002 – 2005",
       companyIcon: "/icons/organisation/cu.svg"
     }
   ],
@@ -175,24 +175,16 @@ const CVData = {
   languages: ["English", "Hindi", "Bangla"],
   interests: [
     {
-      name: "Tinkering with electronics",
-      details: "IoT, Raspberry Pi, Arduino"
+      name: "Electronics and Servers",
+      details: "IoT, Raspberry Pi, Arduino, server setup, virtualization, cloud computing, network configuration, Linux administration, Docker, automation, low-code, no-code"
     },
     {
-      name: "Creating home lab servers",
-      details: "Server setup, virtualization, cloud computing, network configuration, Linux administration, Docker, automation, low-code, no-code"
-    },
-    {
-      name: "Cooking",
-      details: "Culinary arts, recipe experimentation, meal preparation, kitchen organization, food science, chemistry"
+      name: "Cooking and Gardening",
+      details: "Recipe experimentation, meal preparation, plant care, sustainable gardeningCulinary arts, recipe experimentation, meal preparation, kitchen organization, food science, chemistry"
     },
     {
       name: "Cycling",
-      details: "fitness, outdoor recreation, eco-friendly commuting"
-    },
-    {
-      name: "Gardening",
-      details: "Sustainable gardening, horticulture, plant care, organic gardening"
+      details: "Fitness, outdoor recreation, eco-friendly commuting"
     }
   ]
 };
