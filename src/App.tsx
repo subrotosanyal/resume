@@ -1,9 +1,7 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Briefcase, GraduationCap, Award, User, Heart, Globe, ChevronDown, ChevronUp, Download } from 'lucide-react';
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
+import { Briefcase, GraduationCap, Award, User, Heart, Globe, ChevronDown, ChevronUp } from 'lucide-react';
 import CVData from './CVData';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import Header from './components/Header';
@@ -26,46 +24,10 @@ function App() {
   const [theme, setTheme] = useState<Theme>(themes[7]);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [areAllCardsOpen, setAreAllCardsOpen] = useState(false);
-  const [isDownloading, setIsDownloading] = useState(false);
 
   const toggleAllCards = () => {
     setAreAllCardsOpen(prevState => !prevState);
   };
-
-  const downloadPDF = useCallback(async () => {
-    try {
-      setIsDownloading(true);
-      setAreAllCardsOpen(true); // Ensure all cards are open
-
-      // Wait for state update to propagate
-      await new Promise(resolve => setTimeout(resolve, 100));
-
-      const content = document.getElementById('resume-content');
-      if (!content) return;
-
-      const canvas = await html2canvas(content, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        windowWidth: content.scrollWidth,
-        windowHeight: content.scrollHeight,
-      });
-
-      const imgData = canvas.toDataURL('image/jpeg', 1.0);
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'px',
-        format: [canvas.width * 0.5, canvas.height * 0.5]
-      });
-
-      pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width * 0.5, canvas.height * 0.5);
-      pdf.save('resume.pdf');
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-    } finally {
-      setIsDownloading(false);
-    }
-  }, []);
 
   useEffect(() => {
     document.body.className = `${theme.class} ${isDarkMode ? 'dark' : 'light'}`;
@@ -187,22 +149,6 @@ function App() {
             </div>
           </Section>
         </div>
-      </div>
-
-      {/* Download PDF Button */}
-      <div className="fixed bottom-8 right-8 z-50">
-        <button
-          onClick={downloadPDF}
-          disabled={isDownloading}
-          className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 disabled:opacity-50"
-          title="Download PDF"
-        >
-          {isDownloading ? (
-            <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
-          ) : (
-            <Download size={24} />
-          )}
-        </button>
       </div>
 
       <ThemeSwitcher

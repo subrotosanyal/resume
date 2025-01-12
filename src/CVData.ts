@@ -179,10 +179,6 @@ const CVData = {
       details: "IoT, Raspberry Pi, Arduino, server setup, virtualization, cloud computing, network configuration, Linux administration, Docker, automation, low-code, no-code"
     },
     {
-      name: "Cooking and Gardening",
-      details: "Recipe experimentation, meal preparation, plant care, sustainable gardeningCulinary arts, recipe experimentation, meal preparation, kitchen organization, food science, chemistry"
-    },
-    {
       name: "Cycling",
       details: "Fitness, outdoor recreation, eco-friendly commuting"
     }
