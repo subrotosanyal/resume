@@ -27,10 +27,9 @@ docker build -t magic-portfolio:prod .
 
 **2. Run container**
 ```bash
-docker run --rm -p 3000:3000 --env-file .env magic-portfolio:prod
+docker run --rm -p 3000:3000 magic-portfolio:prod
 ```
 
-If you do not have a `.env` file, you can omit `--env-file .env`.
 
 Open `http://localhost:3000`.
 
