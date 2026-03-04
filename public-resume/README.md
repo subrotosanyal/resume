@@ -22,7 +22,7 @@ The repository includes a production `Dockerfile`.
 
 **1. Build image**
 ```bash
-docker build -t magic-portfolio:prod .
+docker build -f public-resume/Dockerfile -t magic-portfolio:prod .
 ```
 
 **2. Run container**
@@ -32,6 +32,5 @@ docker run --rm -p 3000:3000 magic-portfolio:prod
 
 
 Open `http://localhost:3000`.
-
 
 
