@@ -19,7 +19,6 @@ COPY --from=builder /app/public-resume/.next ./.next
 COPY --from=builder /app/public-resume/public ./public
 COPY --from=builder /app/public-resume/next.config.mjs ./next.config.mjs
 COPY --from=builder /app/public-resume/src/app/work/projects ./src/app/work/projects
-COPY --from=builder /app/public-resume/src/app/blog/posts ./src/app/blog/posts
 
 EXPOSE 3000
 CMD ["npm", "run", "start"]
